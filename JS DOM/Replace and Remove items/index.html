@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        #task-input {
+            width: 70%;
+            padding: 8px;
+        }
+        button {
+            background-color: teal;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .task-container {
+            margin-top: 20px;
+        }
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        .delete-btn {
+            color: red;
+            cursor: pointer;
+        }
+        #clear-btn {
+            background-color: black;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task List</h1>
+    <label for="task-input">New Task</label><br>
+    <input type="text" id="task-input" placeholder="Walk the dog">
+    <button id="add-task">ADD TASK</button>
+
+    <div class="task-container">
+        <h3>Tasks</h3>
+        <div id="task-list">
+            <div class="task-item">
+                <span>List Item</span>
+                <span class="delete-btn">x</span>
+            </div>
+            <div class="task-item">
+                <span>List Item</span>
+                <span class="delete-btn">x</span>
+            </div>
+            <div class="task-item">
+                <span>List Item</span>
+                <span class="delete-btn">x</span>
+            </div>
+            <div class="task-item">
+                <span>List Item</span>
+                <span class="delete-btn">x</span>
+            </div>
+            <div class="task-item">
+                <span>List Item</span>
+                <span class="delete-btn">x</span>
+            </div>
+        </div>
+        <button id="clear-btn">CLEAR TASKS</button>
+    </div>
+</body>
+</html>
